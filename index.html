@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXATION</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'grayplus' : '#404040',
+                'gray' : '#F0F0F0',
+                'colortext' : '#151515',
+              },
+              fontFamily : {
+                'montserrat' : ['Montserrat', 'sans-serif'],
+                'cormorant' : ["Cormorant Infant", 'serif']
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-montserrat">
+    <!-- HEAD  -->
+    <div class="relative min-h-screen max-h-screen px-10 lg:px-32 bg-cover bg-center" style="background-image: url(./assets/image/img.jpeg);">
+        <div class="absolute inset-0 z-10 bg-black min-h-screen opacity-70"></div>
+
+        <div class="relative min-h-screen z-20 text-white grid content-center italic">
+            <div>
+                <p class="text-sm md:text-base">Invitation Wedding</p>
+                <p class="font-semibold text-3xl md:text-5xl lg:text-7xl tracking-wide py-2 font-cormorant">Sebar Kabar Gembira <br>dalam Genggaman</p>
+                <p class="text-sm md:text-base">with FLEXATION</p>
+            </div>
+
+            <div class="py-10">
+                <button class="bg-gray px-5 py-3 text-xs text-colortext font-semibold hover:text-white rounded-full hover:bg-grayplus">Pilih Desain Impianmu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- KATALOG  -->
+    <div class="min-h-screen px-10 lg:px-32 py-20 text-center text-colortext">
+        <div>
+            <h1 class="text-xl md:text-4xl font-semibold font-cormorant tracking-widest">KATALOG</h1>
+            <p class="text-xs md:text-base py-3">
+                Jadikan Undangan Pernikahanmu Tampil Eksklusif dan Berkesan <br>
+                Pilih Desain Undangan Terbaik Hanya Khusus Untuk Kamu
+            </p>
+        </div>
+        
+        <!-- CARD KATALOG -->
+        <div class="grid grid-cols-2 py-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10 gap-5 lg:gap-9">
+            <!-- CARD -->
+            <div class="bg-grayplus p-5 rounded-2xl text-white">
+                <img class="rounded-xl" src="./assets/image/katalog.jpg" alt="">
+                <div class="py-3 flex flex-col md:gap-1">
+                    <h1 class="font-semibold text-xl">Zainab</h1>
+                    <p class="text-base font-medium tracking-wider">Rp. 75.000</p>
+                    <p class="text-xs line-through">Rp. 75.000</p>
+                    <div class="grid gap-1 text-xs text-colortext pt-4 md:px-3 lg:px-6">
+                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Preview</button>
+                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-grayplus p-5 rounded-2xl text-white">
+                <img class="rounded-xl" src="./assets/image/katalog.jpg" alt="">
+                <div class="py-3 flex flex-col md:gap-1">
+                    <h1 class="font-semibold text-xl">Zainab</h1>
+                    <p class="text-base font-medium tracking-wider">Rp. 75.000</p>
+                    <p class="text-xs line-through">Rp. 75.000</p>
+                    <div class="grid gap-1 text-xs text-colortext pt-4 md:px-3 lg:px-6">
+                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Preview</button>
+                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-grayplus p-5 rounded-2xl text-white">
+                <img class="rounded-xl" src="./assets/image/katalog.jpg" alt="">
+                <div class="py-3 flex flex-col md:gap-1">
+                    <h1 class="font-semibold text-xl">Zainab</h1>
+                    <p class="text-base font-medium tracking-wider">Rp. 75.000</p>
+                    <p class="text-xs line-through">Rp. 75.000</p>
+                    <div class="grid gap-1 text-xs text-colortext pt-4 md:px-3 lg:px-6">
+                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Preview</button>
+                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-grayplus p-5 rounded-2xl text-white">
+                <img class="rounded-xl" src="./assets/image/katalog.jpg" alt="">
+                <div class="py-3 flex flex-col md:gap-1">
+                    <h1 class="font-semibold text-xl">Zainab</h1>
+                    <p class="text-base font-medium tracking-wider">Rp. 75.000</p>
+                    <p class="text-xs line-through">Rp. 75.000</p>
+                    <div class="grid gap-1 text-xs text-colortext pt-4 md:px-3 lg:px-6">
+                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Preview</button>
+                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
