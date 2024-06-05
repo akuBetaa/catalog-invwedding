@@ -8,6 +8,10 @@
     <!-- CSS  -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <!-- Icons Flaticon  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
+
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -19,7 +23,8 @@
               colors: {
                 'grayplus' : '#404040',
                 'gray' : '#F0F0F0',
-                'colortext' : '#151515',
+                'graybutton' : '#312F31',
+                'colortext'  : '#151515',
               },
               fontFamily : {
                 'montserrat' : ['Montserrat', 'sans-serif'],
@@ -30,7 +35,7 @@
         }
       </script>
 </head>
-<body class="font-montserrat">
+<body class="font-montserrat scroll-smooth">
     <!-- HEAD  -->
     <div class="relative min-h-screen max-h-screen px-10 lg:px-32 bg-cover bg-center" style="background-image: url(./assets/image/img.jpeg);">
         <div class="absolute inset-0 z-10 bg-black min-h-screen opacity-70"></div>
@@ -43,79 +48,79 @@
             </div>
 
             <div class="py-10">
-                <button class="bg-gray px-5 py-3 text-xs text-colortext font-semibold hover:text-white rounded-full hover:bg-grayplus">Pilih Desain Impianmu</button>
+                <button data-target="#katalog" class="scroll-button bg-gray px-5 py-3 text-xs text-colortext font-semibold hover:text-white rounded-full hover:bg-grayplus">Pilih Desain Impianmu</button>
             </div>
         </div>
     </div>
 
     <!-- KATALOG  -->
-    <div class="min-h-screen px-10 lg:px-32 py-20 text-center text-colortext">
-        <div>
-            <h1 class="text-xl md:text-4xl font-semibold font-cormorant tracking-widest">KATALOG</h1>
-            <p class="text-xs md:text-base py-3">
-                Jadikan Undangan Pernikahanmu Tampil Eksklusif dan Berkesan <br>
+    <div class="px-10 lg:px-32 py-10 lg:py-20 text-center text-colortext" id="katalog">
+        <div class="lg:px-60 md:px-16">
+            <h1 class="text-xl md:text-4xl font-bold font-cormorant tracking-widest">KATALOG</h1>
+            <p class="text-xs md:text-base py-1 md:py-3">
+                Jadikan Undangan Pernikahanmu Tampil Eksklusif dan Berkesan
                 Pilih Desain Undangan Terbaik Hanya Khusus Untuk Kamu
             </p>
         </div>
         
         <!-- CARD KATALOG -->
-        <div class="grid grid-cols-2 py-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10 gap-5 lg:gap-9">
-            <!-- CARD -->
+        <!-- <div class="grid grid-cols-2 pt-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10 gap-5 lg:gap-9">
+            CARD
             <div class="bg-grayplus p-5 rounded-2xl text-white">
                 <img class="rounded-xl" src="./assets/image/katalog.jpg" alt="">
                 <div class="py-3 flex flex-col md:gap-1">
-                    <h1 class="font-semibold text-xl">Zainab</h1>
-                    <p class="text-base font-medium tracking-wider">Rp. 75.000</p>
-                    <p class="text-xs line-through">Rp. 75.000</p>
-                    <div class="grid gap-1 text-xs text-colortext pt-4 md:px-3 lg:px-6">
-                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Preview</button>
-                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Pesan Sekarang</button>
+                    <h1 class="font-medium text-lg md:text-xl lg:text-2xl">Zainab</h1>
+                    <div class="grid gap-2 lg:gap-4 text-xs text-colortext pt-2 md:px-3 lg:px-6">
+                        <button class="bg-gray hover:bg-graybutton hover:text-gray rounded-full p-1.5 flex justify-center gap-2">
+                            <i class="fi fi-rr-eye mt-0.5"></i>
+                            Preview
+                        </button>
+                        <a href="https://wa.me/6281554909512" class="bg-gray hover:bg-graybutton hover:text-gray xs:rounded rounded-full p-1.5 py-2">
+                            Pesan Sekarang
+                        </a>
                     </div>
                 </div>
-            </div>
+            </div> 
+        </div> -->
 
-            <div class="bg-grayplus p-5 rounded-2xl text-white">
-                <img class="rounded-xl" src="./assets/image/katalog.jpg" alt="">
-                <div class="py-3 flex flex-col md:gap-1">
-                    <h1 class="font-semibold text-xl">Zainab</h1>
-                    <p class="text-base font-medium tracking-wider">Rp. 75.000</p>
-                    <p class="text-xs line-through">Rp. 75.000</p>
-                    <div class="grid gap-1 text-xs text-colortext pt-4 md:px-3 lg:px-6">
-                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Preview</button>
-                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Pesan Sekarang</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-grayplus p-5 rounded-2xl text-white">
-                <img class="rounded-xl" src="./assets/image/katalog.jpg" alt="">
-                <div class="py-3 flex flex-col md:gap-1">
-                    <h1 class="font-semibold text-xl">Zainab</h1>
-                    <p class="text-base font-medium tracking-wider">Rp. 75.000</p>
-                    <p class="text-xs line-through">Rp. 75.000</p>
-                    <div class="grid gap-1 text-xs text-colortext pt-4 md:px-3 lg:px-6">
-                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Preview</button>
-                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Pesan Sekarang</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-grayplus p-5 rounded-2xl text-white">
-                <img class="rounded-xl" src="./assets/image/katalog.jpg" alt="">
-                <div class="py-3 flex flex-col md:gap-1">
-                    <h1 class="font-semibold text-xl">Zainab</h1>
-                    <p class="text-base font-medium tracking-wider">Rp. 75.000</p>
-                    <p class="text-xs line-through">Rp. 75.000</p>
-                    <div class="grid gap-1 text-xs text-colortext pt-4 md:px-3 lg:px-6">
-                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Preview</button>
-                        <button class="bg-gray hover:bg-grayplus hover:text-gray rounded-full p-1">Pesan Sekarang</button>
-                    </div>
-                </div>
-            </div>
-            
+        <!-- CARD KATALOG by data.js  -->
+        <div id="dataTheme" class="grid grid-cols-2 pt-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10 gap-5 lg:gap-9">
+            <!-- Data will be inserted here -->
         </div>
     </div>
 
+
+    <!-- KONSULTASI  -->
+    <div class="bg-grayplus text-white text-center m-6 lg:mx-32 rounded-2xl p-5">
+        <p class="font-cormorant text-lg md:text-2xl lg:text-3xl font-semibold tracking-wider">PESAN & KONSULTASI GRATIS</p>
+        <p class="text-xs md:text-base lg:text-xl py-1 pb-4 lg:py-3 lg:mx-52">
+            Konsultasi gratis sekarang dan dapatkan undangan digital kualitas terbaik dan fitur terlengkap sekarang juga! 
+        </p>
+        <button class="bg-gray hover:bg-graybutton text-colortext hover:text-white py-1 px-4 rounded-full text-xs md:text-base">
+            <i class="fi fi-brands-whatsapp"></i>
+            Konsultasi Gratis Sekarang
+        </button>
+    </div>
+
+    <!-- FAQ  -->
+    <div>
+
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="bg-grayplus text-center p-5 text-white">
+        <p>FLEXATION</p>
+        <div class="flex justify-center gap-2 py-3">
+            <button class="pt-1 hover:text-colortext">
+                <i class="fi fi-brands-whatsapp"></i>
+            </button>
+            <button class="pt-1 hover:text-colortext">
+                <i class="fi fi-brands-whatsapp"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="./assets/js/data.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
