@@ -11,7 +11,7 @@ const dataTheme = document.getElementById("dataTheme");
 
 theme.forEach((item) => {
   const dataItem = document.createElement("div");
-  dataItem.classList.add("bg-grayplus", "p-5", "rounded-2xl", "text-white");
+  dataItem.classList.add("bg-grayplus", "p-3", "md:p-5", "rounded-2xl", "text-white");
   dataItem.innerHTML = `
                 <img class="rounded-xl" src="${item.image}" alt="">
                 <div class="py-3 flex flex-col md:gap-1">
@@ -29,3 +29,16 @@ theme.forEach((item) => {
             `;
   dataTheme.appendChild(dataItem);
 });
+
+//Dropdown FAQs
+function toggleDropdown() {
+  const textElement = document.getElementById('hiddenText');
+  const buttonElement = document.getElementById('toggleButton');
+  if (textElement.classList.contains('hidden')) {
+    textElement.classList.remove('hidden');
+    buttonElement.textContent = 'Sembunyikan';
+  } else {
+    textElement.classList.add('hidden');
+    buttonElement.textContent = 'Tampilkan';
+  }
+}
