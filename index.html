@@ -1,70 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FLEXATION</title>
+    <!-- image logo -->
+    <link rel="icon" href="./assets/image/logo.png" />
 
     <!-- CSS  -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- Icons Flaticon  -->
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css"
+    />
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Tailwind Config  -->
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                'grayplus' : '#404040',
-                'gray' : '#F0F0F0',
-                'graybutton' : '#312F31',
-                'colortext'  : '#151515',
-              },
-              fontFamily : {
-                'montserrat' : ['Montserrat', 'sans-serif'],
-                'cormorant' : ["Cormorant Infant", 'serif']
-              }
-            }
-          }
-        }
-      </script>
-</head>
-<body class="font-montserrat scroll-smooth">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              grayplus: "#404040",
+              gray: "#F0F0F0",
+              graybutton: "#312F31",
+              colortext: "#151515",
+            },
+            fontFamily: {
+              montserrat: ["Montserrat", "sans-serif"],
+              cormorant: ["Cormorant Infant", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-montserrat scroll-smooth">
     <!-- HEAD  -->
-    <div class="relative min-h-screen max-h-screen px-10 lg:px-32 bg-cover bg-center" style="background-image: url(./assets/image/img.jpeg);">
-        <div class="absolute inset-0 z-10 bg-black min-h-screen opacity-70"></div>
+    <div
+      class="relative min-h-screen max-h-screen px-10 lg:px-32 bg-cover bg-center"
+      style="background-image: url(./assets/image/img.jpeg)"
+    >
+      <div class="absolute inset-0 z-10 bg-black min-h-screen opacity-70"></div>
 
-        <div class="relative min-h-screen z-20 text-white grid content-center italic">
-            <div>
-                <p class="text-sm md:text-base">Invitation Wedding</p>
-                <p class="font-semibold text-3xl md:text-5xl lg:text-7xl tracking-wide py-2 font-cormorant">Sebar Kabar Gembira <br>dalam Genggaman</p>
-                <p class="text-sm md:text-base">with FLEXATION</p>
-            </div>
-
-            <div class="py-10">
-                <button data-target="#katalog" class="scroll-button bg-gray px-5 py-3 text-xs text-colortext font-semibold hover:text-white rounded-full hover:bg-grayplus">Pilih Desain Impianmu</button>
-            </div>
+      <div
+        class="relative min-h-screen z-20 text-white grid content-center italic"
+      >
+        <div>
+          <p class="text-sm md:text-base">Invitation Wedding</p>
+          <p
+            class="font-semibold text-3xl md:text-5xl lg:text-7xl tracking-wide py-2 font-cormorant"
+          >
+            Sebar Kabar Gembira <br />dalam Genggaman
+          </p>
+          <p class="text-sm md:text-base">with FLEXATION</p>
         </div>
+
+        <div class="py-10">
+          <button
+            data-target="#katalog"
+            class="scroll-button bg-gray px-5 py-3 text-xs text-colortext font-semibold hover:text-white rounded-full hover:bg-grayplus"
+          >
+            Pilih Desain Impianmu
+          </button>
+        </div>
+      </div>
     </div>
 
     <!-- KATALOG  -->
-    <div class="px-5 lg:px-32 py-10 lg:py-20 text-center text-colortext" id="katalog">
-        <div class="px-5 lg:px-60 md:px-16">
-            <h1 class="text-xl md:text-4xl font-bold font-cormorant tracking-widest">KATALOG</h1>
-            <p class="text-xs md:text-base py-1 md:py-3">
-                Jadikan Undangan Pernikahanmu Tampil Eksklusif dan Berkesan
-                Pilih Desain Undangan Terbaik Hanya Khusus Untuk Kamu
-            </p>
-        </div>
-        
-        <!-- CARD KATALOG -->
-        <!-- <div class="grid grid-cols-2 pt-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10 gap-5 lg:gap-9">
+    <div
+      class="px-5 lg:px-32 py-10 lg:py-20 text-center text-colortext"
+      id="katalog"
+    >
+      <div class="px-5 lg:px-60 md:px-16">
+        <h1
+          class="text-xl md:text-4xl font-bold font-cormorant tracking-widest"
+        >
+          KATALOG
+        </h1>
+        <p class="text-xs md:text-base py-1 md:py-3">
+          Jadikan Undangan Pernikahanmu Tampil Eksklusif dan Berkesan Pilih
+          Desain Undangan Terbaik Hanya Khusus Untuk Kamu
+        </p>
+      </div>
+
+      <!-- CARD KATALOG -->
+      <!-- <div class="grid grid-cols-2 pt-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10 gap-5 lg:gap-9">
             CARD
             <div class="bg-grayplus p-5 rounded-2xl text-white">
                 <img class="rounded-xl" src="./assets/image/katalog.jpg" alt="">
@@ -83,46 +112,163 @@
             </div> 
         </div> -->
 
-        <!-- CARD KATALOG by data.js  -->
-        <div id="dataTheme" class="grid grid-cols-2 pt-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10 gap-5 lg:gap-9">
-        </div>
+      <!-- CARD KATALOG by data.js  -->
+      <div
+        id="dataTheme"
+        class="grid grid-cols-2 pt-4 md:grid-cols-3 lg:grid-cols-4 lg:px-10 gap-5 lg:gap-9"
+      ></div>
     </div>
 
-
     <!-- KONSULTASI  -->
-    <div class="bg-grayplus text-white text-center m-6 lg:mx-32 rounded-2xl p-5">
-        <p class="font-cormorant text-lg md:text-2xl lg:text-3xl font-semibold tracking-wider">PESAN & KONSULTASI GRATIS</p>
-        <p class="text-xs md:text-base lg:text-xl py-1 pb-4 lg:py-3 lg:mx-52">
-            Konsultasi gratis sekarang dan dapatkan undangan digital kualitas terbaik dan fitur terlengkap sekarang juga! 
-        </p>
-        <button class="bg-gray hover:bg-graybutton text-colortext hover:text-white py-1 px-4 rounded-full text-xs md:text-base">
-            <i class="fi fi-brands-whatsapp"></i>
-            Konsultasi Gratis Sekarang
+    <div
+      class="bg-grayplus text-white text-center m-6 py-10 lg:mx-32 rounded-2xl p-5"
+    >
+      <p
+        class="font-cormorant text-lg md:text-2xl lg:text-3xl font-semibold tracking-wider"
+      >
+        PESAN & KONSULTASI GRATIS
+      </p>
+      <p class="text-xs md:text-base lg:text-xl py-1 pb-4 lg:py-3 lg:mx-52">
+        Konsultasi gratis sekarang dan dapatkan undangan digital kualitas
+        terbaik dan fitur terlengkap sekarang juga!
+      </p>
+      <a href="https://wa.me/6285732705891">
+        <button
+          class="bg-gray hover:bg-graybutton text-colortext hover:text-white py-1 px-4 rounded-full text-xs md:text-base"
+        >
+          <i class="fi fi-brands-whatsapp"></i>
+          Konsultasi Gratis Sekarang
         </button>
+      </a>
     </div>
 
     <!-- FAQ  -->
-    <div class="px-5 pb-5">
-        <div class="font-cormorant text-center font-semibold text-xl md:text-2xl lg:text-3xl">FAQs</div>
-        <div>
-            
+    <div class="px-5 lg:px-64 py-10 lg:py-20">
+      <div
+        class="font-cormorant text-center font-semibold text-xl md:text-2xl lg:text-3xl"
+      >
+        FAQs
+      </div>
+      <div class="py-8 flex flex-col gap-2">
+        <div class="rounded-2xl shadow-xl shadow-gray mb-4">
+          <button
+            class="w-full text-left px-4 py-4 text-base md:text-lg font-semibold hover:bg-gray-300 focus:outline-none"
+            onclick="toggleFAQ('faq1')"
+          >
+            Berapa lama pengerjaan undangan website?
+          </button>
+          <div id="faq1" class="faq-content">
+            <p class="text-sm md:text-base">
+              Untuk pengerjaan undangan website, memakan waktu 2-3 Hari setelah
+              Data undangan dan fotonya dilengkapi. Dan semua proses
+              pengerjaanya dilakukan oleh tim Flexation.
+            </p>
+          </div>
         </div>
+
+        <div class="rounded-2xl shadow-xl shadow-gray mb-4">
+          <button
+            class="w-full text-left px-4 py-4 text-base md:text-lg font-semibold hover:bg-gray-300 focus:outline-none"
+            onclick="toggleFAQ('faq2')"
+          >
+            Apakah data undangan dan foto bisa menyusul?
+          </button>
+          <div id="faq2" class="faq-content">
+            <p class="text-sm md:text-base">
+              Bisa! sudah order berarti sudah booking. Jadi foto kamu menyusul
+              beberapa bulan lagi.
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl shadow-xl shadow-gray mb-4">
+          <button
+            class="w-full text-left px-4 py-4 text-base md:text-lg font-semibold hover:bg-gray-300 focus:outline-none"
+            onclick="toggleFAQ('faq3')"
+          >
+            Apa di undangan website nanti akan tercantum nama penerima undangan?
+          </button>
+          <div id="faq3" class="faq-content">
+            <p class="text-sm md:text-base">
+              Nama tamu akan tercantum di undangan website kamu. Untuk membuat
+              Nama tamu, sehingga Unlimited share dan Unlimited Nama tamu.
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl shadow-xl shadow-gray mb-4">
+          <button
+            class="w-full text-left px-4 py-4 text-base md:text-lg font-semibold hover:bg-gray-300 focus:outline-none"
+            onclick="toggleFAQ('faq4')"
+          >
+            Apakah kalimat atau bahasanya bisa disesuaikan dengan request?
+          </button>
+          <div id="faq4" class="faq-content">
+            <p class="text-sm md:text-base">
+              Bisa, Jadi kamu bisa request kalimat dan bahasanya sesuai dengan
+              keinginan kamu secara gratis.
+            </p>
+          </div>
+        </div>
+
+        <div class="rounded-2xl shadow-xl shadow-gray mb-4">
+          <button
+            class="w-full text-left px-4 py-4 text-base md:text-lg font-semibold hover:bg-gray-300 focus:outline-none"
+            onclick="toggleFAQ('faq5')"
+          >
+            Apakah tata letak desain dan fitur bisa disesuaikan?
+          </button>
+          <div id="faq5" class="faq-content">
+            <p class="text-sm md:text-base">
+              Bisa, Jadi kamu bisa request untuk rubah posisi desain/fitur
+              diundangannya.
+              <br />
+              <br />
+              Serta fitur diundangannya bisa di nonaktifkan jika kamu tidak
+              membutuhkannya seperti (Wedding Gift, Wedding Wish, Instagram
+              link, Video Prewedding dan lain sebagainya).
+              <br />
+              <br />
+              Dan jika ada fitur yang ingin ditambahkan, namun tidak tersedia
+              pada paket yang ditawarkan. Bisa langsung konsultasikan pada
+              kontak admin kami.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- FOOTER  -->
-    <div class="bg-grayplus text-center p-5 text-white">
-        <p>FLEXATION</p>
-        <div class="flex justify-center gap-2 py-3">
-            <button class="pt-1 hover:text-colortext">
-                <i class="fi fi-brands-whatsapp"></i>
-            </button>
-            <button class="pt-1 hover:text-colortext">
-                <i class="fi fi-brands-whatsapp"></i>
-            </button>
-        </div>
+    <div
+      class="px-5 lg:px-64 py-10 flex flex-col gap-4 justify-center items-center bg-grayplus text-center p-5 text-white"
+    >
+      <div class="flex gap-3 justify-center items-center">
+        <!-- <img src="./assets/image/logo.png" class="w-10 rounded-md" alt=""> -->
+        <h1 class="text-3xl md:text-5xl font-bold font-cormorant">Flexation</h1>
+      </div>
+      <div class="flex justify-center items-center gap-2 py-3">
+        <a href="https://wa.me/6285732705891" class="">
+          <button
+            class="text-white border border-white hover:bg-white hover:text-colortext py-1 px-4 rounded-full text-xs md:text-base"
+          >
+            <i class="fi fi-brands-whatsapp"></i>
+            Konsultasi Sekarang
+          </button>
+        </a>
+      </div>
+      <div>
+        <p class="text-xs md:text-base">
+          © 2024 Flexation x
+          <a
+            href="https://flexdev.site"
+            class="hover:text-cyan-200 font-semibold"
+            >Flexdev</a
+          >. All Rights Reserved
+        </p>
+      </div>
     </div>
 
     <script src="./assets/js/data.js"></script>
     <script src="./assets/js/script.js"></script>
-</body>
+  </body>
 </html>

@@ -31,14 +31,7 @@ theme.forEach((item) => {
 });
 
 //Dropdown FAQs
-function toggleDropdown() {
-  const textElement = document.getElementById('hiddenText');
-  const buttonElement = document.getElementById('toggleButton');
-  if (textElement.classList.contains('hidden')) {
-    textElement.classList.remove('hidden');
-    buttonElement.textContent = 'Sembunyikan';
-  } else {
-    textElement.classList.add('hidden');
-    buttonElement.textContent = 'Tampilkan';
-  }
+function toggleFAQ(faqID) {
+  const faqContent = document.getElementById(faqID);
+  faqContent.classList.toggle('open');
 }
